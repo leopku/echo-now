@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "echo-now",
+  "builds": [
+    { "src": "app/app.go", "use": "@now/go" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "app/app.go" }
+  ]
+}
